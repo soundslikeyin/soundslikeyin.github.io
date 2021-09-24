@@ -4,7 +4,7 @@
 html{
     font-family: sans-serif;
     color: #4a4a4a;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 h1 {
@@ -118,7 +118,6 @@ header {
 .banner-content h1 {
     text-align: left;
     width: 100%;
-
 }
 
 .banner-content p {
@@ -145,6 +144,11 @@ header {
     font-weight:500;
 }
 
+.banner-container {
+    display: block;
+    justify-items: center;
+    align-items: center;
+}
 
 /* Information Main Bar */
 
@@ -183,14 +187,20 @@ header {
 .side-information {
     background-color: white;
     display: grid;
-    padding: 0px 16px 32px 0px;
+    padding: 16px 0px 32px 0px;
     row-gap: 64px;
 }
 
 .side-text {
-    padding: 0px 16px 0 16px;
+    padding: 16px 16px 0 16px;
 }
 
+.side-media {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.side-media
 
 /* Courses */
 .courses-container {
@@ -344,7 +354,9 @@ header {
     .side-information {
         width: 40vw;
         row-gap: 0px;
-    }
+        padding: 0px 16px 32px 0px;
+        
+    }    
 
     .side-card {
         display: flex;
@@ -361,6 +373,8 @@ header {
         height: auto;
         margin-bottom: 16px;
         margin-top: 16px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .side-media-top {
@@ -374,7 +388,9 @@ header {
         grid-template-columns: 1;
         width: 65%;
         align-content: center;
+        padding: 0px 16px 0 16px;
     }
+    
 
     .side-text p {
         padding-top: 8px;
@@ -386,6 +402,8 @@ header {
         background-color: #dbdbdb;
         padding-left: 72px;
         padding-right: 72px;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 
     .course-image-desktop {
