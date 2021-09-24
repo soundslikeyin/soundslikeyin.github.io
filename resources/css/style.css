@@ -1,0 +1,491 @@
+/* this is the main style sheet for Colmar Academy site*/
+
+/* Global */
+html{
+    font-family: sans-serif;
+    color: #4a4a4a;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+a {
+    font-size: 14px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #5f9de5;
+}
+
+/* Header Navbar */
+
+header {
+    background-color: white;
+}
+
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-mobile {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-desktop {
+    display: none;
+    height: 64px;
+    width: 100vw;
+    padding: 0 24px 0 24px;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    width: fit-content;
+    line-height: 64px;
+    font-size: 32px;
+}
+
+.navbar-desktop {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    justify-items: flex-start;
+}
+
+.navbar-desktop a {
+    font-size: 20px;
+    font-weight: normal;
+    color: #4a4a4a;
+
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Banner */
+
+.banner {
+    background-color: #dbdbdb;
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 16px 32px 16px;
+}
+
+.banner-content h1 {
+    text-align: left;
+    width: 100%;
+
+}
+
+.banner-content p {
+    text-align: left;
+    margin-top: 32px;
+    width: 100%;
+    font-size: 22px;
+    font-weight:500;
+}
+
+.banner-media {
+    width: 100vw;
+}
+
+.banner-button {
+    text-align: center;
+    width: 100%;
+    background-color: #9b9b9b;
+    margin-top: 24px;
+    border: 0;
+    padding: 8px 0 8px 0;
+    color: white;
+    font-size: 22px;
+    font-weight:500;
+}
+
+
+/* Information Main Bar */
+
+
+.main-information {
+    display: none;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 60vw;
+}
+
+.main-information-text h1 {
+    margin-bottom: 24px;
+
+}
+
+.main-quote {
+    margin-bottom: 32px;
+
+}
+
+.image-information-main {
+    margin-bottom: 32px;
+}
+
+.image-information-desktop {
+    display: none;
+    margin-top: 16px;
+    margin-left: 16px;
+
+}
+
+/* Information Main Side Bar */
+
+.side-information {
+    background-color: white;
+    display: grid;
+    padding: 0px 16px 32px 0px;
+    row-gap: 64px;
+}
+
+.side-text {
+    padding: 0px 16px 0 16px;
+}
+
+
+/* Courses */
+.courses-container {
+    outline: solid 1px #f3f4f4;
+    display: grid;
+    padding: 32px 16px 32px 16px;
+}
+
+.courses-container h2 {
+    height: fit-content;
+    line-height: normal;
+    text-align: center;
+}
+
+.courses-inner-container {
+    display: grid;
+    row-gap: 8px;
+    margin-top: 16px;
+}
+
+.course-card {
+    background-color: #dbdbdb;
+    padding: 16px 16px 24px 16px;
+}
+
+.course-image-desktop {
+    display: none;
+}
+
+.course-title-desktop {
+    display: none;
+}
+
+.course-description-desktop {
+    display: none;
+}
+
+
+/* Exhibit */
+.exhibit-container {
+    padding: 32px 0px 24px 0px;
+}
+
+.exhibit-container h2 {
+    height: fit-content;
+    line-height: normal;
+    text-align: center;
+}
+
+.main-exhibit-media {
+    margin: 16px 0 24px 0;
+}
+
+.exhibit-video-mobile {
+    width: 100vw;
+}
+
+.exhibit-title-mobile {
+    display: block;
+}
+
+.exhibit-title-desktop {
+    display: none;
+}
+
+.main-exhibit {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 60vw;
+}
+
+.side-exhibit {
+    display: none;
+    width: 40vw;
+}
+
+
+/* copyright */
+.copyright {
+    padding: 16px 16px 16px 16px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.terms-privacy {
+    display: none;
+}
+
+
+@media (min-width: 1024px) {
+
+    /* Menu styling for desktop */
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: flex;
+    }
+
+    .main-information {
+        display: flex;
+    }
+
+
+    /* Banner stying for desktop */
+    .banner-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .banner-content {
+        width: 40vw;
+
+    }
+
+    .banner-media {
+        display: flex;
+        flex-direction: column;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        width: 60vw;
+    }
+
+    .banner-button {
+        width: 50%;
+        background-color: #4d4e4e;
+    }
+
+    /* Information styling for desktop */
+    .information-container {
+        display: flex;
+        flex-direction: row;
+        padding: 32px 0px 32px 0px;
+    }
+
+    .image-information-mobile {
+        display: none;
+    }
+
+    .image-information-desktop {
+        display: block;
+        margin: 0;
+    }
+
+    /* Side information styling for desktop */
+    .side-information {
+        width: 40vw;
+        row-gap: 0px;
+    }
+
+    .side-card {
+        display: flex;
+        padding-left: 16px;
+        flex-direction: row;
+    }
+
+    .side-card-dark {
+        background-color:#dbdbdb;
+    }
+
+    .side-media {
+        width: 35%;
+        height: auto;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+
+    .side-media-top {
+        margin-top: 0px;
+    }
+
+    .side-text {
+        /* display: flex;
+        flex-direction: column; */
+        display: grid;
+        grid-template-columns: 1;
+        width: 65%;
+        align-content: center;
+    }
+
+    .side-text p {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    /* Courses styling for desktop */
+    .courses-container {
+        background-color: #dbdbdb;
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+
+    .course-image-desktop {
+        display: block;
+
+    }
+
+    .course-title-desktop {
+        display: block;
+    }
+
+    .course-description-desktop {
+        display: block;
+    }
+
+    .courses-inner-container {
+        grid-template-columns: repeat(3, 2fr);
+        row-gap: 32px;
+        column-gap: 32px;
+        background-color: #dbdbdb;
+
+    }
+
+    .course-card {
+        padding: 0;
+        background-color: white;
+    }
+
+    .course-text {
+        padding: 16px 0 24px 16px;
+
+    }
+
+    .course-text h3 {
+        margin-bottom: 8px;
+    }
+
+    .course-title-desktop {
+        margin-bottom: 8px;
+    }
+
+    /* Exhibit styling for desktop */
+    .exhibit-title-mobile {
+        display: none;
+    }
+
+    .exhibit-title-desktop {
+        display: block;
+    }
+
+    .exhibit-inner-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .exhibit-video-mobile {
+        width:100%;
+    }
+
+    /* Side exhibit styling for desktop */
+    .side-exhibit {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-exhibit-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .side-exhibit-card img {
+        width: 35%;
+        padding: 16px;
+    }
+
+    .side-exhibit-text {
+        width: 65%;
+        align-content: flex-start;
+        padding: 16px;
+    }
+
+    /* Footer styling for desktop */
+    footer {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        padding: 16px 24px 16px 24px;
+        justify-content: space-between;
+        outline: solid 1px #f3f4f4;
+    }
+
+    .copyright {
+        padding: 0;
+    }
+
+    .terms-privacy {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        column-gap: 16px;
+        padding: 0;
+    }
+
+}
+
