@@ -1,0 +1,47 @@
+
+.dropdown-menu {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+    margin-top:0px !important;
+    width:100% !important;
+} 
+
+.dropdown-column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 250px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.dropdown-column a {
+    display: block;
+    text-align: left;
+}
+
+/* new */
+.swipe-panel{
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 80px;
+  }
+
+.swipe-panel .flex-md-row{
+    height: unset;
+}
+
+
+  .swipe-panel .nav-item {
+    cursor: pointer;
+  }
+  
+  .swipe-panel .nav-item.selected {
+      /* to define for selected */
+    }
+
+
+

@@ -1,0 +1,105 @@
+html {
+    font-family: AvenirNextLTW01-Regular, "avenir next", avenir, helvetica, arial, sans-serif;
+}
+
+h1 {
+    font-family: "ITC Avant Garde Gothic W01 Md", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: "ITC Avant Garde Gothic W01 Bk", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.25;
+}
+
+h3 {
+    font-family: "ITC Avant Garde Gothic W01 Bk", "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: 400;
+    font-size: .875em;
+    line-height: 1.42857;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.625;
+    min-height: 1.625em;
+    max-width: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar-collapse {
+    justify-content: space-between;
+
+}
+
+.nav-search {
+    display: flex;
+    justify-items: flex-end;
+}
+
+.book-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.book-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.book-author {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    column-gap: 20px;
+    margin: 0;
+}
+
+.book-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    word-wrap: normal;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.purchase {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.social-media-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
