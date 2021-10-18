@@ -1,3 +1,73 @@
+@media (max-width: 767px) {
+    /* .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    } */
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.3%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.3%);
+    }
+
+    .search-categories {
+        display: none;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+/* large and up screens */
+@media (min-width: 992px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(16.6%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-16.6%);
+    }
+}
+
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+h4 {
+    min-width: fit-content;
+}
+
+/* p .card-text {
+
+} */
 
 .dropdown-menu {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
@@ -23,7 +93,7 @@
     text-align: left;
 }
 
-/* new */
+/* swipe-panel */
 .swipe-panel{
     overflow-x: auto;
     overflow-y: hidden;
@@ -34,14 +104,25 @@
     height: unset;
 }
 
-
-  .swipe-panel .nav-item {
+.swipe-panel .nav-item {
     cursor: pointer;
-  }
+}
   
-  .swipe-panel .nav-item.selected {
-      /* to define for selected */
-    }
+/* .swipe-panel .nav-item.selected {
+      to define for selected
+} */
 
 
+/* carousel-item */
+.carousel-item .card-img img {
+    height: 209px;
+}
+
+.carousel-item .card-body {
+    padding: 0;
+}
+
+.book-list .card-img img{
+    height: 248px;
+}
 
