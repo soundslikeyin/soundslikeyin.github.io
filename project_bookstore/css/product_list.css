@@ -10,13 +10,12 @@
       transform: translateX(-33.3%);
     }
 
-    .carousel-item .card-img img {
-      padding-left: 10px;
-      
+    .carousel-item .card-img img,
+    .carousel-item .card-body {
+      padding-left: 15px;
   }
 
 }
-
 
 
 .carousel-inner .carousel-item.active,
@@ -37,6 +36,12 @@
     .carousel-inner .carousel-item-prev {
       transform: translateX(-25%);
     }
+
+    .carousel-item .card-img img,
+    .carousel-item .card-body {
+      padding-left: 20px;
+  }
+
 }
 
 /* large and up screens */
@@ -52,7 +57,8 @@
       transform: translateX(-16.6%);
     }
 
-    .carousel-item .card-img img {
+    .carousel-item .card-img img,
+    .carousel-item .card-body {
       padding-left: 20px;
   }
   
@@ -123,9 +129,9 @@ h4 {
     /* padding-left: 20px; */
 /* } */
 
-.carousel-item .card-body {
+/* .carousel-item .card-body {
     padding: 0;
-}
+} */
 
 .book-list .card-img img{
     height: 248px;
