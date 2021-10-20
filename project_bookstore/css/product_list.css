@@ -116,13 +116,11 @@ h4 {
 
 
 /* carousel-item */
-.carousel-item .card-img img {
+/* .carousel-item .card-img img { */
     /* height: 209px; */
     /* width: 312px; */
-    padding-left: 20px;
-}
-
-.ca
+    /* padding-left: 20px; */
+/* } */
 
 .carousel-item .card-body {
     padding: 0;
