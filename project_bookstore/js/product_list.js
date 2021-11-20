@@ -18,10 +18,12 @@ items.forEach((el) => {
 
 //For book search
 const row = document.getElementById('book-search')
-const key = "AIzaSyDgRDYqwNBJPN87HDc87Hkcs5gb00fe0uw"
+const key = "AIzaSyDgRDYqwNBJPN87HDc87Hkcs5gb00fe0uw"   
 const resultsNum = document.getElementById('result-num')
 const searchForm = document.querySelector('#search-bar-input')
 const searchText = document.querySelector('#search-bar-input > input')
+const searchResults = document.querySelector('.book-list')
+resultsNum.innerText = 0
 
 searchText.addEventListener("keydown", function (event) {
     if (event.key === "Enter" || event.keyCode === 13) {
@@ -37,12 +39,15 @@ searchText.addEventListener("keydown", function (event) {
 
         // call function to remove child nodes from previous search
         removeAllChildNodes(row);
+        resultsNum.innerText = 0
 
         // construct query text using form data from search bar
         let queryText = ""
         queryText = searchText.value.replace(/\s/g, '+')
 
         getData(queryText);
+
+        searchResults.scrollIntoView(); // {block:"nearest", behavior:"smooth"}
     }
 });
 
@@ -57,12 +62,13 @@ async function getData(queryText) {
     const books = data.items;
     let resultsCount = books.length
     resultsNum.innerText = resultsCount
+    console.log(resultsNum)
+
 
     // console.log(data)
     console.log(books);
 
     books.forEach(book => {
-        console.log(resultsNum)
 
         const title = book.volumeInfo.title
         console.log(title)
@@ -107,8 +113,13 @@ async function getData(queryText) {
             bookCover.setAttribute('class', 'img-fluid')
 
             // const bookCoverUrl = "https://covers.openlibrary.org/b/isbn/" + isbn + "-M.jpg"
+
+            try{
             const bookCoverUrl = book.volumeInfo.imageLinks.thumbnail
             bookCover.src = bookCoverUrl
+            } catch (error) {
+                console.error(error)
+            }
 
             // Create an h4 and set the text content to the title
             const title = book.volumeInfo.title
