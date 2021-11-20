@@ -1,3 +1,9 @@
+body {
+  min-width: 320px;
+  max-width: 1440px;
+    margin: 0 auto; 
+}
+
 @media (max-width: 767px) {
 
     .carousel-inner .carousel-item-end.active,
@@ -16,7 +22,6 @@
   }
 
 }
-
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
