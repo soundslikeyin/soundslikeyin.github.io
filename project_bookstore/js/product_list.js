@@ -23,40 +23,28 @@ const resultsNum = document.getElementById('result-num')
 const searchForm = document.querySelector('#search-bar-input')
 const searchText = document.querySelector('#search-bar-input > input')
 
-// searchText.addEventListener("keydown", function (event) {
-//     if (event.key === "Enter") {
-//         event.preventDefault();
-//         // Do more work
-//         processSearch();
-//     }
-// });
-
-searchText.addEventListener("keyup", function (event) {
-    // if (event.key === "Enter") {
+searchText.addEventListener("keydown", function (event) {
+    if (event.key === "Enter" || event.keyCode === 13) {
         event.preventDefault();
         // Do more work
-        processSearch();
-    // }
-});
 
-
-function processSearch() {
-    // create a function to remove all child nodes
-    function removeAllChildNodes(parent) {
-        while (parent.firstChild) {
-            parent.removeChild(parent.firstChild);
+        // create a function to remove all child nodes
+        function removeAllChildNodes(parent) {
+            while (parent.firstChild) {
+                parent.removeChild(parent.firstChild);
+            }
         }
+
+        // call function to remove child nodes from previous search
+        removeAllChildNodes(row);
+
+        // construct query text using form data from search bar
+        let queryText = ""
+        queryText = searchText.value.replace(/\s/g, '+')
+
+        getData(queryText);
     }
-
-    // call function to remove child nodes from previous search
-    removeAllChildNodes(row);
-
-    // construct query text using form data from search bar
-    let queryText = ""
-    queryText = searchText.value.replace(/\s/g, '+')
-
-    getData(queryText);
-}
+});
 
 
 async function getData(queryText) {
