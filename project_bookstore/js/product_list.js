@@ -29,7 +29,6 @@ searchText.addEventListener("keydown", function (event) {
     if (event.key === "Enter" || event.keyCode === 13) {
         event.preventDefault();
         // Do more work
-
         // create a function to remove all child nodes
         function removeAllChildNodes(parent) {
             while (parent.firstChild) {
